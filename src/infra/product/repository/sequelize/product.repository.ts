@@ -1,6 +1,6 @@
-import { Product } from "../../domain/product/entities";
-import { ProductRepositoryInterface } from "../../domain/product/repositories";
-import { ProductModel } from "../db/sequelize/model";
+import { Product } from "../../../../domain/product/entities";
+import { ProductRepositoryInterface } from "../../../../domain/product/repositories";
+import { ProductModel } from "./product.model";
 
 export class ProductRepository implements ProductRepositoryInterface {
   async create(entity: Product): Promise<void> {
