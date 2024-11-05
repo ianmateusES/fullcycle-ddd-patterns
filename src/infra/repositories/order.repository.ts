@@ -1,6 +1,5 @@
-import sequelize from "sequelize/types/sequelize";
-import { Order, OrderItem } from "../../domain/entities";
-import { OrderRepositoryInterface } from "../../domain/repositories";
+import { Order, OrderItem } from "../../domain/checkout/entities";
+import { OrderRepositoryInterface } from "../../domain/checkout/repositories";
 import { OrderModel, OrderItemModel } from "../db/sequelize/model";
 
 export class OrderRepository implements OrderRepositoryInterface {
